@@ -46,7 +46,7 @@ public class FileSystem {
                     fileSystem.show(level);
                 } catch (NullPointerException e) {
                 }
-                level = 0;
+                level--;
             } else if (fileSystem.getFile().isFile()) {
                 System.out.println(" [file] " + fileSystem.getFile().getName());
             }
